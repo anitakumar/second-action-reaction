@@ -26,6 +26,7 @@ jobs:
       #upload to server
   # this is another job in the workflow needs a runner
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
