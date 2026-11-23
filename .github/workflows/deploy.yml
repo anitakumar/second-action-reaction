@@ -6,7 +6,7 @@ name: Test Project
 #   pull_request:
 #     branches:
 #       - main
-on: push
+on: [push, workflow_dispatch] # add muliplt events, you wil get runworkflow button
 jobs:
   # two jobs created and then will run in parallel running separately on the runners
   test:
